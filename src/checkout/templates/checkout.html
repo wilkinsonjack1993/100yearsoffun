@@ -30,6 +30,7 @@
 </script>
 {% endblock %}
 
+
 {% block jquery %}
 $(function() {
   var $form = $('#payment-form');
@@ -49,6 +50,8 @@ $(function() {
 {% block content %}
 <div class='row'>
 <div class='col-sm-6 col-sm-offset-3'>
+<h3>Tickets are &#163;11.50</h3>
+
 <form class='form' action="" method="POST" id="payment-form"> {% csrf_token %}
   <span class="payment-errors"></span>
 
@@ -78,6 +81,10 @@ $(function() {
 
   <input class='btn btn-success' type="submit" class="submit" value="Submit Payment">
 </form>
+<!-- Confirmation or error message on card payment  -->
+{% if confirm_message %}
+<p>{{confirm_message}}</p>
+{% endif %}
 </div>
 </div>
 

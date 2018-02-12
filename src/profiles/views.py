@@ -7,11 +7,6 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
 
-def about(request):
-    context = {}
-    template = 'about.html'
-    return render(request,template,context)
-
 @login_required
 def userProfile(request):
     user=request.user

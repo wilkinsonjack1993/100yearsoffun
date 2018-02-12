@@ -16,8 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'wilkinsonjack1993@gmail.com'
-EMAIL_HOST_PASSWORD = 'Billbob1!'
+EMAIL_HOST_USER = '100yearsoffunparty@gmail.com'
+EMAIL_HOST_PASSWORD = 'MiJaBrHu'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'profiles',
-    'contact',
     'crispy_forms',
     # The following apps are required:
     'django.contrib.sites',
@@ -164,7 +163,7 @@ ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = LOGIN_URL
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = None
 
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 3
-ACCOUNT_EMAIL_REQUIRED = False
+ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = None
 ACCOUNT_EMAIL_SUBJECT_PREFIX = "My subject: "
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = "http"
